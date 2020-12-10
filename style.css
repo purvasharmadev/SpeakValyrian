@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+:root{
+    --primary-color:#4B5563;
+    --light-yellow:#1F2937;
+    --off-white: rgb(190, 184, 184);
+}
+
+body{
+    font-family: 'East Sea Dokdo', cursive;
+    margin: 0;
+    }
+.bgimg{
+    background-image: url(/Bg.jpg);
+    /* background-image: url(https://wallpaperset.com/w/full/2/d/e/271506.jpg); */
+    background-color: #cccccc; 
+    height: 100%; 
+     background-position:center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+    .head{
+        /* background-color: var(--primary-color); */
+        /* padding: 1rem 0rem; */
+        margin-left: 3rem;
+    }
+    
+    
+    .head .heading{
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 100px;
+        text-align: left;
+        /* padding-top: 0.5rem; */
+        color: var(--light-yellow);
+        margin: 0;
+        
+    }
+   .head-para{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 25px; 
+    text-align: justify;
+   }
+   .head-para blockquote{
+       margin: 0;
+   }
+    .row{
+        margin-top: 1rem;
+        display: inline;
+    }
+    
+    .column{
+        /* background: yellow; */
+        float: left;
+        width: 50%;
+    }
+    .column-2{
+        /* background: red; */
+        height:135px;
+        float: left;
+        width: 50%;
+        text-align: center;
+    
+    }
+    /* Clear floats after the columns */
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+ 
+/* body{
+    padding: 0.5rem;
+    background-color: yellow;
+    text-align: center;
+}
+div{
+    border-radius: 3rem;
+    margin:0rem 10rem;
+    background-color: white;
+} */
+
+textarea{
+    /* outline: none; */
+    resize: none;
+    background-color:honeydew;
+    /* margin: 1rem 2.9rem; */
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    font-size: 30px;
+    padding: 2rem;
+    color: var(--light-yellow);
+    /* font-weight: bold; */
+    min-width: 50%;
+    border: 2px double var(--primary-color);
+    font-family: 'East Sea Dokdo', cursive;
+ 
+}
+
+button {
+    background-color: honeydew;
+    color: black;
+   
+    padding: 0.5rem 2rem;
+    margin-left: 3rem;
+    border-radius: 0.5rem;
+    border: 1px var(--light-yellow) solid;
+    font-family: 'Nerko One', cursive;
+}
+button:hover {
+    background-color: var(--light-yellow);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    color: white;
+  }
+#output{
+     color: var(--light-yellow);
+    font-size: 30px;
+    border-radius:0rem ;
+    
+    /* margin: 0.5rem 2.5rem; */
+ 
+}
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.container-center{
+    max-width: 350px;
+    max-height: auto;
+    color: var(--light-yellow);
+    margin-left: 3rem;
+   background-color: honeydew;
+    border: 2px double var(--primary-color);
+    font-size: 50px;
+    padding: 2rem;
+}
+
+
+
+.footer{
+    margin: 0;
+    background-color: var(--primary-color);
+    padding: 1rem 0rem;
+    text-align:center;
+    color: var(--light-yellow);
+    font-family: 'Nerko One', cursive;
+}
+.footer .footer-para{
+    text-align:center;
+}
+
+
+@media only screen and (max-width:700px){ 
+    div{
+        margin: 0rem 0rem;
+       
+
+    }
+    .bgimg{
+        background-image: url(https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.wallpapername.com%2FFictional_characters%2FHouse_Lannister%2Ftextures_game_of_thrones_red_background_house_lannister_2048x1108_wallpaper_38741&psig=AOvVaw10DuCOww-jz-a318qmgnoh&ust=1607632439444000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjUteDfwe0CFQAAAAAdAAAAABAS);
+        background-color: #cccccc; 
+        height: 100%; 
+         background-position:center;
+        background-repeat: no-repeat; 
+        background-size: cover; 
+    }
+   textarea{
+        width:150px;
+        color: var(--light-yellow);
+        font-size: large;
+        }
+    #output{
+        width:150px;
+        padding: 3rem;
+        color: var(--light-yellow);
+        font-size: large;
+       
+        border-radius:0rem ;
+        margin: 0.5rem 2.5rem;
+    }
+    button{
+        margin-left: 6rem;
+    } 
+}
